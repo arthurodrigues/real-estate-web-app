@@ -1,5 +1,20 @@
 {
+  "name": "projects",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
   "dependencies": {
-    "git": "^0.1.5"
-  }
+    "express": "^4.19.2",
+    "git": "^0.1.5",
+    "mime": "^1.2.9",
+    "nodemon": "^3.1.4"
+  },
+  "scripts": {
+    "dev": "nodemon api/index.js",
+    "start": "node api/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
