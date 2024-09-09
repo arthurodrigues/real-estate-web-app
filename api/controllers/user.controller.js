@@ -49,8 +49,10 @@ export const deleteUser = async(req, res, next) => {
 export const getUserListings = async (req, res, next) => {
     if (req.user.id === req.params.id) {
         try {
-            const userId = new mongoose.Types.ObjectId(req.params.id);  
-            const listings = await Listing.find({ userRef: userId });
+            if (!mongoose.isValidObjectId(req.params.id)) {
+                return next(errorHandler(400, 'Invalid user ID format'));
+            }
+            const listings = await Listing.find({ userRef: req.params.id });
             res.status(200).json(listings);
         } catch (error) {
             next(error);
