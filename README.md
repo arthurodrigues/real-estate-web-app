@@ -134,7 +134,7 @@ Este projeto está licenciado sob os termos da licença MIT. Consulte o arquivo 
 
 ### 👨‍💻 Desenvolvedor
 
-Desenvolvido por **Arthur Rodrigues (https://github.com/seuusuario)**. Fique à vontade para entrar em contato ou contribuir com o projeto!
+Desenvolvido por **Arthur Rodrigues (https://github.com/arthurodrigues)**. Fique à vontade para entrar em contato ou contribuir com o projeto!
 
 ---
 
